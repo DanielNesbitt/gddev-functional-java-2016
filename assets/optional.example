@@ -1,0 +1,20 @@
+String extractPattern(JsonNode node) {
+  if (node != null) {
+    JsonNode patternNode = n.get("pattern");
+    if (patternNode != null) {
+      String pattern = patternNode.asText();
+      if (!pattern.isEmpty()) {
+        return pattern;
+      }
+    }
+  }
+  return "*";
+}
+
+String extractPattern(JsonNode node) {
+  return Optional.ofNullable(node)
+    .map(n -> n.get("pattern"))
+    .map(cn -> cn.asText())
+    .filter(p -> !p.isEmpty());
+    .orElse("*");
+}
