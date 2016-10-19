@@ -1,0 +1,8 @@
+Result userName(long id) {
+  return Try.of(() -> User.lookup(id))
+    .map(user -> user.getName())
+    .fold(
+      th -> notFound(),
+      name -> ok(name)
+    );
+}

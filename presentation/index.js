@@ -40,6 +40,8 @@ preloader(images);
 
 const theme = createTheme({primary: "#174365", secondary: "#75A0C1"});
 
+const textColor = "A9DAFF";
+
 export default class Presentation extends React.Component {
   render() {
     return (
@@ -133,16 +135,32 @@ export default class Presentation extends React.Component {
             <Heading>Lambdas</Heading>
             <List>
               <Appear fid="1">
-                <ListItem><b>Function</b> - takes 1 param of <i>T</i> and returns a <i>U</i>.</ListItem>
+                <ListItem>
+                  <b>Function</b>
+                  - takes 1 param of
+                  <i>T</i>
+                  and returns a
+                  <i>U</i>.</ListItem>
               </Appear>
               <Appear fid="2">
-                <ListItem><b>Predicate</b> - takes 1 param of <i>T</i> and returns a boolean</ListItem>
+                <ListItem>
+                  <b>Predicate</b>
+                  - takes 1 param of
+                  <i>T</i>
+                  and returns a boolean</ListItem>
               </Appear>
               <Appear fid="3">
-                <ListItem><b>Supplier</b> - takes no params and returns a <i>T</i>.</ListItem>
+                <ListItem>
+                  <b>Supplier</b>
+                  - takes no params and returns a
+                  <i>T</i>.</ListItem>
               </Appear>
               <Appear fid="4">
-                <ListItem><b>Consumer</b> - take 1 param of <i>T</i> and returns void.</ListItem>
+                <ListItem>
+                  <b>Consumer</b>
+                  - take 1 param of
+                  <i>T</i>
+                  and returns void.</ListItem>
               </Appear>
             </List>
           </Slide>
@@ -170,6 +188,50 @@ export default class Presentation extends React.Component {
           <Slide>
             <Heading>Optional</Heading>
             <CodePane lang="java" textSize="1.1rem" source={require("raw!../assets/optional.flatMap.example")} margin="20px auto"/>
+          </Slide>
+
+          <Slide>
+            <Heading>Making your own monads</Heading>
+          </Slide>
+
+          <Slide>
+            <Heading>Try</Heading>
+            <List>
+              <Appear fid="1">
+                <ListItem>
+                  <b>Success</b>
+                  - contains the result of the function</ListItem>
+              </Appear>
+              <Appear fid="2">
+                <ListItem>
+                  <b>Failure</b>
+                  - contains the failure in the event of an exception</ListItem>
+              </Appear>
+            </List>
+          </Slide>
+
+          <Slide>
+            <Heading>Try</Heading>
+            <CodePane lang="java" textSize="1.1rem" source={require("raw!../assets/try.example")} margin="20px auto"/>
+          </Slide>
+
+          <Slide>
+            <Heading>Javaslang</Heading>
+            <Appear>
+              <Text textColor={textColor}>Option
+                <i>&lt;T&gt;</i>
+              </Text>
+            </Appear>
+            <Appear>
+              <Text textColor={textColor}>Try
+                <i>&lt;Throwable, T&gt;</i>
+              </Text>
+            </Appear>
+            <Appear>
+              <Text textColor={textColor}>Either
+                <i>&lt;L, R&gt;</i>
+              </Text>
+            </Appear>
           </Slide>
 
           <Slide bgColor="black" notes="You can even put notes on your slide. How awesome is that?">
