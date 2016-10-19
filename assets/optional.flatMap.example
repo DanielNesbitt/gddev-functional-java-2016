@@ -1,0 +1,9 @@
+/**
+ * If a value is present, apply the provided {@code Optional}-bearing
+ * mapping function to it, return that result, otherwise return an empty
+ * {@code Optional}.  This method is similar to {@link #map(Function)},
+ * but the provided mapper is one whose result is already an {@code Optional},
+ * and if invoked, {@code flatMap} does not wrap it with an additional
+ * {@code Optional}.
+ */
+Optional<U> flatMap(Function<? super T, Optional<U>> mapper)

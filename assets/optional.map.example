@@ -1,0 +1,13 @@
+/**
+ * If a value is present, apply the provided mapping function to it,
+ * and if the result is non-null, return an {@code Optional} describing the
+ * result.  Otherwise return an empty {@code Optional}.
+ */
+Optional<U> map(Function<? super T, ? extends U> mapper)
+
+/**
+ * If a value is present, and the value matches the given predicate,
+ * return an {@code Optional} describing the value, otherwise return an
+ * empty {@code Optional}.
+ */
+Optional<T> filter(Predicate<? super T> predicate)

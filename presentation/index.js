@@ -51,6 +51,7 @@ export default class Presentation extends React.Component {
             </Heading>
             <Text textColor="secondary" bold>Daniel Nesbitt</Text>
           </Slide>
+
           <Slide>
             <Heading caps fit>What is functional programming?</Heading>
             <BlockQuote>
@@ -58,6 +59,7 @@ export default class Presentation extends React.Component {
               <Cite>Wikipedia</Cite>
             </BlockQuote>
           </Slide>
+
           <Slide>
             <Heading>Advantages</Heading>
             <List>
@@ -67,12 +69,14 @@ export default class Presentation extends React.Component {
               <ListItem bold>more testable</ListItem>
             </List>
           </Slide>
+
           <Slide>
             <Heading bold fit>Why am hearing more about functional programming?</Heading>
             <Appear fid="1">
               <Text bold fit>Is it a new paradigm?</Text>
             </Appear>
           </Slide>
+
           <Slide>
             <Heading fit bold>Not by a long shot</Heading>
             <List fit>
@@ -87,6 +91,7 @@ export default class Presentation extends React.Component {
               </Appear>
             </List>
           </Slide>
+
           <Slide>
             <Heading>Jargon</Heading>
             <Layout>
@@ -114,23 +119,57 @@ export default class Presentation extends React.Component {
               </List>
             </Layout>
           </Slide>
+
           <Slide>
             <Heading fit>What can we do in Java?</Heading>
           </Slide>
+
           <Slide>
             <Heading>Lambdas</Heading>
             <CodePane lang="java" textSize="1.5rem" source={require("raw!../assets/lambda.example")} margin="20px auto"/>
           </Slide>
+
+          <Slide>
+            <Heading>Lambdas</Heading>
+            <List>
+              <Appear fid="1">
+                <ListItem><b>Function</b> - takes 1 param of <i>T</i> and returns a <i>U</i>.</ListItem>
+              </Appear>
+              <Appear fid="2">
+                <ListItem><b>Predicate</b> - takes 1 param of <i>T</i> and returns a boolean</ListItem>
+              </Appear>
+              <Appear fid="3">
+                <ListItem><b>Supplier</b> - takes no params and returns a <i>T</i>.</ListItem>
+              </Appear>
+              <Appear fid="4">
+                <ListItem><b>Consumer</b> - take 1 param of <i>T</i> and returns void.</ListItem>
+              </Appear>
+            </List>
+          </Slide>
+
           <Slide>
             <Heading bold fit>Monadic types</Heading>
-            <Heading textColor="secondary" padding={20}>Optional</Heading>
-            <Heading textColor="secondary" padding={20}>Stream</Heading>
+            <Appear>
+              <Heading textColor="secondary" padding={20}>Optional</Heading>
+            </Appear>
+            <Appear>
+              <Heading textColor="secondary" padding={20}>Stream</Heading>
+            </Appear>
           </Slide>
+
           <Slide>
             <Heading>Optional</Heading>
-            <Appear>
-              <CodePane lang="java" textSize="1.1rem" source={require("raw!../assets/optional.example")} margin="20px auto"/>
-            </Appear>
+            <CodePane lang="java" textSize="1.1rem" source={require("raw!../assets/optional.map.example")} margin="20px auto"/>
+          </Slide>
+
+          <Slide>
+            <Heading>Optional</Heading>
+            <CodePane lang="java" textSize="1.1rem" source={require("raw!../assets/optional.example")} margin="20px auto"/>
+          </Slide>
+
+          <Slide>
+            <Heading>Optional</Heading>
+            <CodePane lang="java" textSize="1.1rem" source={require("raw!../assets/optional.flatMap.example")} margin="20px auto"/>
           </Slide>
 
           <Slide bgColor="black" notes="You can even put notes on your slide. How awesome is that?">
