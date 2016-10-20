@@ -1,0 +1,7 @@
+int sum = IntStream.range(0,10)
+  .reduce(0, (i1, i2) -> i1 + i2);
+
+Stream<String> names;
+String concatenatedName = names.reduce("", (s1, s2) -> s1 + ", " + s2);
+
+List<String> listOfNames = names.collect(Collectors.toList());
