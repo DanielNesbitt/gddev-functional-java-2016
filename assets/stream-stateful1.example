@@ -1,0 +1,10 @@
+Function<String, String> print(String s) {
+  return s -> { System.out.println("A"); return s; }
+}
+
+public static void main(String[] args) {
+    Stream.of(Debug.getStrings(1000))
+        .map(print("A"))
+        .sorted()
+        .map(print("B"));
+}

@@ -153,7 +153,9 @@ export default class Presentation extends React.Component {
             </Slide>
 
             <Slide>
-
+              <Heading>Composition</Heading>
+              <CodePane lang="java" textSize="1.1rem" source={require("raw!../assets/lambda-composition.example")}
+                        margin="20px auto"/>
             </Slide>
 
             <Slide>
@@ -269,6 +271,26 @@ export default class Presentation extends React.Component {
                   </Fill>
                 </Appear>
               </Layout>
+            </Slide>
+
+            <Slide>
+              <Heading>Stateful</Heading>
+              <CodePane lang="java" textSize="1.1rem" source={require("raw!../assets/stream-stateful1.example")} margin="20px auto"/>
+            </Slide>
+
+            <Slide>
+              <Heading>Stateful</Heading>
+              <CodePane lang="java" textSize="1.1rem" source={require("raw!../assets/stream-stateful2.example")} margin="20px auto"/>
+            </Slide>
+
+            <Slide>
+              <Heading>Stateful</Heading>
+              <CodePane lang="java" textSize="1.1rem" source={require("raw!../assets/stream-stateful3.example")} margin="20px auto"/>
+            </Slide>
+
+            <Slide>
+              <Heading>Stateful</Heading>
+              <CodePane lang="java" textSize="1.1rem" source={require("raw!../assets/stream-stateful4.example")} margin="20px auto"/>
             </Slide>
 
             <Slide>

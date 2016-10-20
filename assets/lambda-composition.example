@@ -1,0 +1,14 @@
+static Predicate<Node> elem(String elementName) {
+    return node -> elementName.equals(node.getNodeName());
+}
+
+static Predicate<Node> attr(String attributeName) {
+    return node -> node.getAttributes().getNamedItem(attributeName) != null;
+}
+
+static Predicate<Node> child(Predicate<Node> test) {
+    return node -> directDescendantsMatch(node, test);
+}
+
+Predicate<Node> nodeMatcher = elem("Session").and(attr("lazy"))
+  .and(child(elem("data")).negate());
