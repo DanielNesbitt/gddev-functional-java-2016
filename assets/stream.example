@@ -1,6 +1,6 @@
 Stream<String> getNames(List<JsonNode> nodes) {
  return nodes.stream()
     .map(n -> n.get("name"))
-    .filter(Objects::nonNull) // nn -> Objects.nonNull(nn)
-    .map(nn -> nn.asText());
+    .filter(Objects::nonNull) // n -> Objects.nonNull(n)
+    .map(n -> n.asText());
 }

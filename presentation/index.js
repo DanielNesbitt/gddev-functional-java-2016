@@ -33,7 +33,9 @@ require("normalize.css");
 require("spectacle/lib/themes/default/index.css");
 
 const images = {
-  kat: require("../assets/kat.png")
+  kat: require("../assets/kat.png"),
+  stream1: require("../assets/stream1.svg"),
+  stream2: require("../assets/stream2.svg"),
 };
 
 preloader(images);
@@ -236,16 +238,23 @@ export default class Presentation extends React.Component {
 
             <Slide>
               <Heading>Stream</Heading>
-              <Text>Lazy sequence of values over time</Text>
+              <Heading textSize="2em">Lazy sequence of values over time</Heading>
             </Slide>
 
             <Slide>
               <Heading>Stream</Heading>
+              <Heading textSize="1.5em">Intermediate Operations</Heading>
               <CodePane lang="java" textSize="1.1rem" source={require("raw!../assets/stream.example")} margin="20px auto"/>
             </Slide>
 
             <Slide>
               <Heading>Stream</Heading>
+              <Image src={images.stream1.replace("/", "")} margin="0px auto 40px"/>
+            </Slide>
+
+            <Slide>
+              <Heading>Stream</Heading>
+              <Heading textSize="1.5em">Terminal Operations</Heading>
               <CodePane lang="java" textSize="1.1rem" source={require("raw!../assets/stream-collect.example")} margin="20px auto"/>
             </Slide>
 
@@ -265,8 +274,8 @@ export default class Presentation extends React.Component {
                   <Fill>
                     <Heading textSize="2em">Intermediate</Heading>
                     <List>
-                      <ListItem>stateless</ListItem>
-                      <ListItem>stateful</ListItem>
+                      <ListItem>Stateless</ListItem>
+                      <ListItem>Stateful</ListItem>
                     </List>
                   </Fill>
                 </Appear>
@@ -274,23 +283,33 @@ export default class Presentation extends React.Component {
             </Slide>
 
             <Slide>
-              <Heading>Stateful</Heading>
+              <Heading>Stream</Heading>
               <CodePane lang="java" textSize="1.1rem" source={require("raw!../assets/stream-stateful1.example")} margin="20px auto"/>
             </Slide>
 
             <Slide>
-              <Heading>Stateful</Heading>
+              <Heading>Stream</Heading>
               <CodePane lang="java" textSize="1.1rem" source={require("raw!../assets/stream-stateful2.example")} margin="20px auto"/>
             </Slide>
 
             <Slide>
-              <Heading>Stateful</Heading>
+              <Heading>Stream</Heading>
               <CodePane lang="java" textSize="1.1rem" source={require("raw!../assets/stream-stateful3.example")} margin="20px auto"/>
             </Slide>
 
             <Slide>
-              <Heading>Stateful</Heading>
+              <Heading>Stream</Heading>
               <CodePane lang="java" textSize="1.1rem" source={require("raw!../assets/stream-stateful4.example")} margin="20px auto"/>
+            </Slide>
+
+            <Slide>
+              <Heading>Stream</Heading>
+              <CodePane lang="java" textSize="1.1rem" source={require("raw!../assets/stream-stateful5.example")} margin="20px auto"/>
+            </Slide>
+
+            <Slide>
+              <Heading>Stream</Heading>
+              <Image src={images.stream2.replace("/", "")} margin="0px auto 40px"/>
             </Slide>
 
             <Slide>

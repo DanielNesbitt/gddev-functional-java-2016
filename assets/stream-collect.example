@@ -5,3 +5,9 @@ Stream<String> names;
 String concatenatedName = names.reduce("", (s1, s2) -> s1 + ", " + s2);
 
 List<String> listOfNames = names.collect(Collectors.toList());
+
+List<String> listOfNames = names.collect(
+  () -> new ArrayList<>(),
+  (c, v) -> c.add(v),
+  (c1, c2) -> c1.addAll(c2)
+)

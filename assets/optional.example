@@ -14,7 +14,7 @@ String extractPattern(JsonNode node) {
 String extractPattern(JsonNode node) {
   return Optional.ofNullable(node)
     .map(n -> n.get("pattern"))
-    .map(cn -> cn.asText())
+    .map(n -> n.asText())
     .filter(p -> !p.isEmpty());
     .orElse("*");
 }
