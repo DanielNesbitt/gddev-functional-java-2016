@@ -7,5 +7,5 @@ public static void main(String[] args) {
         .map(print("A"))
         .sorted()
         .limit(10)
-        .forEach((s) -> {});
+        .forEach(s -> {});
 }

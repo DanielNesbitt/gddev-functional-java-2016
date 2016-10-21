@@ -5,5 +5,5 @@ Function<String, String> print(String s) {
 public static void main(String[] args) {
     Stream.of(Debug.getStrings(1000))
         .map(print("A"))
-        .forEach((s) -> {});
+        .forEach(s -> {});
 }

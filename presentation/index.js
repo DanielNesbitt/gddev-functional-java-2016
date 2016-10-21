@@ -36,6 +36,7 @@ const images = {
   kat: require("../assets/kat.png"),
   stream1: require("../assets/stream1.svg"),
   stream2: require("../assets/stream2.svg"),
+  streamReduction: require("../assets/stream-reduction.svg"),
 };
 
 preloader(images);
@@ -256,6 +257,11 @@ export default class Presentation extends React.Component {
               <Heading>Stream</Heading>
               <Heading textSize="1.5em">Terminal Operations</Heading>
               <CodePane lang="java" textSize="1.1rem" source={require("raw!../assets/stream-collect.example")} margin="20px auto"/>
+            </Slide>
+
+            <Slide>
+              <Heading>Stream</Heading>
+              <Image src={images.streamReduction.replace("/", "")} margin="0px auto 40px"/>
             </Slide>
 
             <Slide>

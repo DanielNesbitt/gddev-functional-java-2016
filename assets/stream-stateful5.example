@@ -8,5 +8,5 @@ public static void main(String[] args) {
         .sorted()
         .limit(10)
         .map(print("B"))
-        .forEach((s) -> {});
+        .forEach(s -> {});
 }

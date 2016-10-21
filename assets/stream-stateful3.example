@@ -6,5 +6,6 @@ public static void main(String[] args) {
     Stream.of(Debug.getStrings(1000))
         .map(print("A"))
         .limit(10)
-        .forEach((s) -> {});
+        .map(print("B"))
+        .forEach(s -> {});
 }
