@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55ace923-fecc-4a3c-bd62-dc28a3bf5bb3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/stream-stateful2.example" afterPath="$PROJECT_DIR$/assets/stream-stateful2.example" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/stream-stateful3.example" afterPath="$PROJECT_DIR$/assets/stream-stateful3.example" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/stream-stateful4.example" afterPath="$PROJECT_DIR$/assets/stream-stateful4.example" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/stream-stateful5.example" afterPath="$PROJECT_DIR$/assets/stream-stateful5.example" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/presentation/index.js" afterPath="$PROJECT_DIR$/presentation/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Stream-reduction.svg" afterPath="$PROJECT_DIR$/assets/Stream-reduction.svg" />
     </list>
     <ignored path="gddev-funct-java-2016.iws" />
     <ignored path=".idea/workspace.xml" />
