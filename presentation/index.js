@@ -34,8 +34,8 @@ require("spectacle/lib/themes/default/index.css");
 
 const images = {
   kat: require("../assets/kat.png"),
-  stream1: require("../assets/stream1.svg"),
-  stream2: require("../assets/stream2.svg"),
+  stream: require("../assets/stream1.svg"),
+  stateful: require("../assets/stateful.gif"),
   streamReduction: require("../assets/stream-reduction.svg"),
 };
 
@@ -56,17 +56,6 @@ export default class Presentation extends React.Component {
               </Heading>
               <Text textColor="secondary" bold>Daniel Nesbitt</Text>
             </Slide>
-
-            <Slide>
-              <Heading caps fit>What is functional programming?</Heading>
-              <BlockQuote>
-                <Quote textColor="secondary" textSize="1em">Functional programming is a programming paradigm—a style of
-                  building the structure and elements of computer programs—that treats computation as the evaluation of
-                  mathematical functions and avoids changing-state and mutable data.</Quote>
-                <Cite>Wikipedia</Cite>
-              </BlockQuote>
-            </Slide>
-
             <Slide>
               <Heading>Advantages</Heading>
               <List>
@@ -80,7 +69,7 @@ export default class Presentation extends React.Component {
             <Slide>
               <Heading bold fit>Why am hearing more about functional programming?</Heading>
               <Appear fid="1">
-                <Text bold fit>Is it a new paradigm?</Text>
+                <Heading bold fit>Is it a new paradigm?</Heading>
               </Appear>
             </Slide>
 
@@ -250,7 +239,7 @@ export default class Presentation extends React.Component {
 
             <Slide>
               <Heading>Stream</Heading>
-              <Image src={images.stream1.replace("/", "")} margin="0px auto 40px"/>
+              <Image src={images.stream.replace("/", "")} margin="0px auto 40px"/>
             </Slide>
 
             <Slide>
@@ -315,7 +304,7 @@ export default class Presentation extends React.Component {
 
             <Slide>
               <Heading>Stream</Heading>
-              <Image src={images.stream2.replace("/", "")} margin="0px auto 40px"/>
+              <Image src={images.stateful.replace("/", "")} margin="0px auto 40px"/>
             </Slide>
 
             <Slide>
