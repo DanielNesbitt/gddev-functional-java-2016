@@ -67,7 +67,7 @@ export default class Presentation extends React.Component {
             </Slide>
 
             <Slide>
-              <Heading bold fit>Why am hearing more about functional programming?</Heading>
+              <Heading bold fit>Why am I hearing more about functional programming?</Heading>
               <Appear fid="1">
                 <Heading bold fit>Is it a new paradigm?</Heading>
               </Appear>
@@ -279,27 +279,27 @@ export default class Presentation extends React.Component {
 
             <Slide>
               <Heading>Stream</Heading>
-              <CodePane lang="java" textSize="1.1rem" source={require("raw!../assets/stream-stateful1.example")} margin="20px auto"/>
+              <CodePane lang="java" textSize="1.2rem" source={require("raw!../assets/stream-stateful1.example")} margin="20px auto"/>
             </Slide>
 
             <Slide>
               <Heading>Stream</Heading>
-              <CodePane lang="java" textSize="1.1rem" source={require("raw!../assets/stream-stateful2.example")} margin="20px auto"/>
+              <CodePane lang="java" textSize="1.2rem" source={require("raw!../assets/stream-stateful2.example")} margin="20px auto"/>
             </Slide>
 
             <Slide>
               <Heading>Stream</Heading>
-              <CodePane lang="java" textSize="1.1rem" source={require("raw!../assets/stream-stateful3.example")} margin="20px auto"/>
+              <CodePane lang="java" textSize="1.2rem" source={require("raw!../assets/stream-stateful3.example")} margin="20px auto"/>
             </Slide>
 
             <Slide>
               <Heading>Stream</Heading>
-              <CodePane lang="java" textSize="1.1rem" source={require("raw!../assets/stream-stateful4.example")} margin="20px auto"/>
+              <CodePane lang="java" textSize="1.2rem" source={require("raw!../assets/stream-stateful4.example")} margin="20px auto"/>
             </Slide>
 
             <Slide>
               <Heading>Stream</Heading>
-              <CodePane lang="java" textSize="1.1rem" source={require("raw!../assets/stream-stateful5.example")} margin="20px auto"/>
+              <CodePane lang="java" textSize="1.2rem" source={require("raw!../assets/stream-stateful5.example")} margin="20px auto"/>
             </Slide>
 
             <Slide>
@@ -308,7 +308,12 @@ export default class Presentation extends React.Component {
             </Slide>
 
             <Slide>
-              <Heading>Items not covered</Heading>
+              <Heading>What is Java missing?</Heading>
+              <List>
+                <ListItem textSize="1.4em"><b>Value types</b> - object-like primitive</ListItem>
+                <ListItem textSize="1.4em"><b>Pattern matching</b> - switch with super powers</ListItem>
+                <ListItem textSize="1.4em"><b>Persistent structures</b> - immutable collections</ListItem>
+              </List>
             </Slide>
           </Deck>
         </Spectacle>
