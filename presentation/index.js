@@ -79,7 +79,7 @@ export default class Presentation extends React.Component {
             </Slide>
 
             <Slide>
-              <Heading fit bold>Not by a long shot</Heading>
+              <Heading bold>Not really</Heading>
               <List fit>
                 <Appear fid="1">
                   <ListItem bold textSize="2em">Lisp - 1950s</ListItem>
@@ -132,7 +132,7 @@ export default class Presentation extends React.Component {
             </Slide>
 
             <Slide>
-              <Heading>Lambdas - Built ins</Heading>
+              <Heading>Built ins</Heading>
               <List>
                 <Appear fid="1">
                   <ListItem> <b>Function</b> - takes 1 param of <i>T</i> and returns a <i>U</i>. </ListItem>
@@ -198,15 +198,9 @@ export default class Presentation extends React.Component {
 
             <Slide>
               <Heading>Javaslang</Heading>
-              <Text textColor={textColor}>Option
-                <i>&lt;T&gt;</i>
-              </Text>
-              <Text textColor={textColor}>Try
-                <i>&lt;Throwable, T&gt;</i>
-              </Text>
-              <Text textColor={textColor}>Either
-                <i>&lt;L, R&gt;</i>
-              </Text>
+              <Text textSize="1.9em" textColor={textColor}>Option <i>&lt;T&gt;</i> </Text>
+              <Text textSize="1.9em" textColor={textColor}>Try <i>&lt;Throwable, T&gt;</i> </Text>
+              <Text textSize="1.9em" textColor={textColor}>Either <i>&lt;L, R&gt;</i> </Text>
             </Slide>
 
             <Slide>
