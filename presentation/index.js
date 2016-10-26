@@ -56,6 +56,11 @@ export default class Presentation extends React.Component {
               </Heading>
               <Text textColor="secondary" bold>Daniel Nesbitt</Text>
             </Slide>
+
+            <Slide>
+              <Heading>What is functional programming?</Heading>
+            </Slide>
+
             <Slide>
               <Heading>Advantages</Heading>
               <List>
@@ -152,12 +157,8 @@ export default class Presentation extends React.Component {
 
             <Slide>
               <Heading bold fit>Monadic types</Heading>
-              <Appear>
-                <Heading textColor="secondary" padding={20}>Optional</Heading>
-              </Appear>
-              <Appear>
-                <Heading textColor="secondary" padding={20}>Stream</Heading>
-              </Appear>
+              <Heading textColor="secondary" padding={20}>Optional</Heading>
+              <Heading textColor="secondary" padding={20}>Stream</Heading>
             </Slide>
 
             <Slide>
@@ -185,16 +186,8 @@ export default class Presentation extends React.Component {
             <Slide>
               <Heading>Try</Heading>
               <List>
-                <Appear fid="1">
-                  <ListItem>
-                    <b>Success</b>
-                    - contains the result of the function</ListItem>
-                </Appear>
-                <Appear fid="2">
-                  <ListItem>
-                    <b>Failure</b>
-                    - contains the failure in the event of an exception</ListItem>
-                </Appear>
+                  <ListItem> <b>Success</b> - contains the result of the function</ListItem>
+                  <ListItem> <b>Failure</b> - contains the failure in the event of an exception</ListItem>
               </List>
             </Slide>
 
@@ -205,106 +198,100 @@ export default class Presentation extends React.Component {
 
             <Slide>
               <Heading>Javaslang</Heading>
-              <Appear>
-                <Text textColor={textColor}>Option
-                  <i>&lt;T&gt;</i>
-                </Text>
-              </Appear>
-              <Appear>
-                <Text textColor={textColor}>Try
-                  <i>&lt;Throwable, T&gt;</i>
-                </Text>
-              </Appear>
-              <Appear>
-                <Text textColor={textColor}>Either
-                  <i>&lt;L, R&gt;</i>
-                </Text>
-              </Appear>
+              <Text textColor={textColor}>Option
+                <i>&lt;T&gt;</i>
+              </Text>
+              <Text textColor={textColor}>Try
+                <i>&lt;Throwable, T&gt;</i>
+              </Text>
+              <Text textColor={textColor}>Either
+                <i>&lt;L, R&gt;</i>
+              </Text>
             </Slide>
 
             <Slide>
-              <Heading fit>Stream</Heading>
+              <Heading>Streams</Heading>
             </Slide>
 
             <Slide>
-              <Heading>Stream</Heading>
+              <Heading>Streams</Heading>
               <Heading textSize="2em">Lazy sequence of values over time</Heading>
             </Slide>
 
             <Slide>
-              <Heading>Stream</Heading>
+              <Heading>Streams</Heading>
               <Heading textSize="1.5em">Intermediate Operations</Heading>
               <CodePane lang="java" textSize="1.1rem" source={require("raw!../assets/stream.example")} margin="20px auto"/>
             </Slide>
 
             <Slide>
-              <Heading>Stream</Heading>
+              <Heading>Streams</Heading>
               <Image src={images.stream.replace("/", "")} margin="0px auto 40px"/>
             </Slide>
 
             <Slide>
-              <Heading>Stream</Heading>
+              <Heading>Streams</Heading>
               <Heading textSize="1.5em">Terminal Operations</Heading>
               <CodePane lang="java" textSize="1.1rem" source={require("raw!../assets/stream-collect.example")} margin="20px auto"/>
             </Slide>
 
             <Slide>
-              <Heading>Stream</Heading>
+              <Heading>Streams</Heading>
               <Image src={images.streamReduction.replace("/", "")} margin="0px auto 40px"/>
             </Slide>
 
             <Slide>
-              <Heading>Stream</Heading>
+              <Heading>Streams</Heading>
               <Layout>
-                <Appear>
-                  <Fill>
-                    <Heading textSize="2em">Operations</Heading>
-                    <List>
-                      <ListItem>Intermediate</ListItem>
-                      <ListItem>Terminal</ListItem>
-                    </List>
-                  </Fill>
-                </Appear>
-                <Appear>
-                  <Fill>
-                    <Heading textSize="2em">Intermediate</Heading>
-                    <List>
-                      <ListItem>Stateless</ListItem>
-                      <ListItem>Stateful</ListItem>
-                    </List>
-                  </Fill>
-                </Appear>
+                <Fill>
+                  <Heading textSize="2em">Operations</Heading>
+                  <List>
+                    <ListItem>Intermediate</ListItem>
+                    <ListItem>Terminal</ListItem>
+                  </List>
+                </Fill>
+                <Fill>
+                  <Heading textSize="2em">Intermediate</Heading>
+                  <List>
+                    <ListItem>Stateless</ListItem>
+                    <ListItem>Stateful</ListItem>
+                  </List>
+                </Fill>
               </Layout>
             </Slide>
 
             <Slide>
-              <Heading>Stream</Heading>
+              <Heading>Streams</Heading>
               <CodePane lang="java" textSize="1.2rem" source={require("raw!../assets/stream-stateful1.example")} margin="20px auto"/>
             </Slide>
 
             <Slide>
-              <Heading>Stream</Heading>
+              <Heading>Streams</Heading>
               <CodePane lang="java" textSize="1.2rem" source={require("raw!../assets/stream-stateful2.example")} margin="20px auto"/>
             </Slide>
 
             <Slide>
-              <Heading>Stream</Heading>
+              <Heading>Streams</Heading>
               <CodePane lang="java" textSize="1.2rem" source={require("raw!../assets/stream-stateful3.example")} margin="20px auto"/>
             </Slide>
 
             <Slide>
-              <Heading>Stream</Heading>
+              <Heading>Streams</Heading>
               <CodePane lang="java" textSize="1.2rem" source={require("raw!../assets/stream-stateful4.example")} margin="20px auto"/>
             </Slide>
 
             <Slide>
-              <Heading>Stream</Heading>
+              <Heading>Streams</Heading>
               <CodePane lang="java" textSize="1.2rem" source={require("raw!../assets/stream-stateful5.example")} margin="20px auto"/>
             </Slide>
 
             <Slide>
-              <Heading>Stream</Heading>
+              <Heading>Streams</Heading>
               <Image src={images.stateful.replace("/", "")} margin="0px auto 40px"/>
+            </Slide>
+
+            <Slide>
+              <Heading>Streams...</Heading>
             </Slide>
 
             <Slide>
@@ -314,6 +301,34 @@ export default class Presentation extends React.Component {
                 <ListItem textSize="1.4em"><b>Pattern matching</b> - switch with super powers</ListItem>
                 <ListItem textSize="1.4em"><b>Persistent structures</b> - immutable collections</ListItem>
               </List>
+            </Slide>
+
+            <Slide>
+              <Heading>Jargon</Heading>
+              <Layout>
+                <List padding={10}>
+                  <ListItem>Arity</ListItem>
+                  <ListItem>Higher-Order Functions (HOF)</ListItem>
+                  <ListItem>Partial Application</ListItem>
+                  <ListItem>Currying</ListItem>
+                  <ListItem>Function Composition</ListItem>
+                  <ListItem>Idempotentency</ListItem>
+                  <ListItem>Predicates</ListItem>
+                  <ListItem>Functors</ListItem>
+                  <ListItem>Referential Transparency</ListItem>
+                </List>
+                <List padding={10}>
+                  <ListItem>Lambda</ListItem>
+                  <ListItem>Lazy evaluation</ListItem>
+                  <ListItem>Monoid</ListItem>
+                  <ListItem>Monad</ListItem>
+                  <ListItem>Comonad</ListItem>
+                  <ListItem>Applicatives</ListItem>
+                  <ListItem>Isomorphism</ListItem>
+                  <ListItem>Foldable</ListItem>
+                  <ListItem>Traversable</ListItem>
+                </List>
+              </Layout>
             </Slide>
           </Deck>
         </Spectacle>
