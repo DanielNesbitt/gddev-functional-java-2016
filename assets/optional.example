@@ -1,6 +1,6 @@
 String extractPattern(JsonNode node) {
   if (node != null) {
-    JsonNode patternNode = n.get("pattern");
+    JsonNode patternNode = node.get("pattern");
     if (patternNode != null) {
       String pattern = patternNode.asText();
       if (!pattern.isEmpty()) {
